@@ -27,7 +27,7 @@ class Main:
                     MenuItem('Quit', self.quitI))
         self.icon = pystray.Icon("pyBing v0.1", image, "pyBing v0.1", menu)
 
-    def nextI(self):
+    def nextI(self):    
         image = self.b.getNextImage()
         self.appData.saveImage(image)
         wall = WindowsWallpaper()
